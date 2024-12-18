@@ -1,0 +1,242 @@
+.wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 20px 12px 20px;
+        background: #8E8E8E;
+
+        .text{
+            font-size: 18px;
+            color: #FFF;
+            font-weight: 700;
+        }
+
+        .icon{
+            max-width: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .content{
+        padding: 20px;
+        background-color: #FFF;
+        .info-card{
+            border: 1px solid #EEEEEE;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            .top-wrap{
+                display: flex;
+                align-items: center;
+                padding:12px 13px 10px 13px;
+
+                .icon-wrap{
+                    max-width: 16px;
+                    width: 100%;
+                    margin-right: 8px;
+                }
+                .text{
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #333333;
+                }
+            }
+
+            .bottom-wrap{
+                display: flex;
+                align-items: center;
+                padding: 4px 8px;
+                background: linear-gradient(90deg, #E6F9FF 15.42%, #F3FFE0 93.19%);
+
+                .icon-wrap{
+                    max-width: 24px;
+                    width: 100%;
+                    margin-right: 8px;
+                }
+
+                .text{
+                    font-size: 15px;
+                    line-height: 17px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .benefit-card{
+            border-radius: 8px;
+            overflow: hidden;
+
+            .top-wrap{
+                display: flex;
+                justify-content: space-between;
+                padding: 9px 18px;
+                background: linear-gradient(90deg, #D8EAFF 15.42%, #E9F4FF 93.19%),
+                linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+                .text{
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #333333;
+                }
+
+                .price{
+                    font-size: 15px;
+                    line-height: 17px;
+                    color: #77AA00;
+                    font-weight: 700;
+                }
+            }
+
+            .bottom-wrap{
+                padding: 28px 18px 23px 18px;
+                background-color: #FAFAFA;
+
+                .title{
+                    text-align: center;
+                    font-size: 15px;
+                    line-height: 17px;
+                    color: #333333;
+                    font-weight: 700;
+                    margin-bottom: 22px;
+                }
+
+                .info-wrap{
+                    text-align: center;
+                    .text{
+                        font-size: 13px;
+                        line-height: 15px;
+                        color: #333333;
+                        font-weight: 500;
+                        margin-bottom: 4px;
+                    }
+                    .price{
+                        font-size: 26px;
+                        line-height: 30px;
+                        color: #333333;
+                        font-weight: 700;
+                        margin-bottom: 4px;
+                    }
+                    .o-text{
+                        font-size: 11px;
+                        line-height: 12px;
+                        color: #747474;
+                        font-weight: 500;
+                    }
+                }
+
+                .cards-wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 28px 0 0 0;
+                    margin-bottom: 23px;
+
+                    .card{
+                        flex: 1 1 146px;
+                        max-width: 146px;
+                        padding: 8px 6px;
+                        border: 1px solid #CDCDCD;
+                        border-radius: 8px;
+                        text-align: center;
+                        .price{
+                            font-size: 15px;
+                            line-height: 17px;
+                            font-weight: 700;
+                            margin-bottom: 4px;
+                        }
+
+                        .text{
+                            font-size: 11px;
+                            line-height: 12.89px;
+                            color: #333333;
+                        }   
+                    }
+                }
+
+                .outcome-wrapper{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .left-wrap{
+                        position: relative;
+                        z-index: 10;
+                        max-width: 212px;
+                        width: 100%;
+                        padding: 7px 13px 7px 13px;
+                        border: 1.31px solid #00BF36;
+                        border-radius: 5.25px;
+
+                        .price{
+                            font-size: 18px;
+                            line-height: 18.75px;
+                            font-weight: 700;
+                            margin-bottom: 4px;
+                        }
+                        .desc-wrap{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 4px;
+
+                            .icon-wrap{
+                                max-width: 16px;
+                                width: 100%;
+                                margin-right: 4px;
+                            }
+
+                        }
+                        .text{
+                            font-size: 10px;
+                            line-height: 11.72px;
+                            color: #333333;
+
+                            .highlight{
+                                font-weight: 700;
+                            }
+                        }
+                        .glitter{
+                            position: absolute;
+                            width: auto;
+                            left: 0;
+                            top: 0;
+                            z-index: -1;
+                        }
+                    }
+
+                    .right-wrap{
+                        .text{
+                            text-align: end;
+                            font-size: 12px;
+                            line-height: 14.06px;
+                            color: #333333;
+                            font-weight: 500;
+                            margin-bottom: 4px;
+                        }
+                        .price{
+                            font-size: 24px;
+                            line-height: 28.13px;
+                            font-weight: 700;
+                            margin-bottom: 4px;
+                        }
+                        .o-text{
+                            text-align: center;
+                            font-size: 10px;
+                            line-height: 11.72px;
+                            color: #747474;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.text-danger{
+    color: #E82217;
+}
+
+.text-success{
+    color: #77AA00;
+}
