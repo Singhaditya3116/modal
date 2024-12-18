@@ -1,5 +1,4 @@
 import "./GSTInformation.scss";
-import cross from "../images/cross.svg";
 import info from "../images/info.svg";
 import like from "../images/like.svg";
 import bgImg from "../images/bg-img.svg";
@@ -11,9 +10,6 @@ const GSTInformation = () => {
     <div className="wrapper">
       <div className="header">
         <div className="text">GST? No Worries!</div>
-        {/* <div className="icon">
-            <img src={cross} alt="" />
-        </div> */}
         <div className="cross-icon">
 
         </div>

@@ -24,7 +24,7 @@ const MainComponent = () => {
 
     return (
         <>
-            {/* <GSTInformation/> */}
+            <GSTInformation/>
             <Modal showModal={showModal} onClose = {toggleModal} />
 
             <button className="gst-btn" onClick={toggleModal}>Show GST Information</button>
