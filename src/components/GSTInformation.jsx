@@ -2,15 +2,20 @@ import "./GSTInformation.scss";
 import cross from "../images/cross.svg";
 import info from "../images/info.svg";
 import like from "../images/like.svg";
-import bgImg from "../images/bg-img.svg"
+import bgImg from "../images/bg-img.svg";
+import arrowImg1 from "../images/arrow1.svg"
+import arrowImg2 from "../images/arrow2.svg"
 
 const GSTInformation = () => {
   return (
     <div className="wrapper">
       <div className="header">
         <div className="text">GST? No Worries!</div>
-        <div className="icon">
+        {/* <div className="icon">
             <img src={cross} alt="" />
+        </div> */}
+        <div className="cross-icon">
+
         </div>
       </div>
       <div className="content">
@@ -33,7 +38,7 @@ const GSTInformation = () => {
                 <div className="text">
                 GST benefits earned so far 
                 </div>
-                <div className="price">
+                <div className="price text-success">
                     ₹1,10,000
                 </div>
             </div>
@@ -48,16 +53,25 @@ const GSTInformation = () => {
 
                 <div className="cards-wrapper">
                     <div className="card">
-                        <div className="price text-danger">
+                        <div className="price text-success">
                         ₹780
                         </div>
                         <p className="text">Goes to your wallet</p>
                     </div>
                     <div className="card">
-                        <div className="price text-success">
+                        <div className="price text-danger">
                         ₹220
                         </div>
                         <p className="text">Govt. GST on your deposit</p>
+                    </div>
+                    <div className="arrow-divider">
+                        <div className="arrow-1">
+                            <img src={arrowImg1} alt="" />
+                        </div>
+                        <div className="arrow-2">
+                        <img src={arrowImg2} alt="" />
+
+                        </div>
                     </div>
                 </div>
 
@@ -72,6 +86,7 @@ const GSTInformation = () => {
                         </div>
                             <div className="text">on your behalf</div>
                         <img className="glitter" src={bgImg} alt="" />
+                        <div className="border-wrap"></div>
                     </div>
                     <div className="right-wrap">
                         <div className="text">You Get</div>
