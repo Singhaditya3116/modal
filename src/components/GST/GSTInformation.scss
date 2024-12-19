@@ -1,18 +1,22 @@
+$text-white: #FFF;
+$text-grey: #333333;
+$text-light-grey: #CDCDCD;
+
 .wrapper{
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 100px;
+        box-shadow: 0px 0px 12px 0px #000000;
+
+
     .header{
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
         position: relative;
         padding: 9px 20px 12px 20px;
-        background: #8E8E8E;
+        background-color: #8E8E8E;
 
         .text{
             font-size: 18px;
-            color: #FFF;
+            line-height: 21.09px;
+            color: $text-white;
             font-weight: 700;
         }
 
@@ -31,8 +35,8 @@
                 left: 0;
                 top: 0;
                 width: 20px;
-                height: 1px;
-                background-color: #FFF;
+                height: 2px;
+                background-color: $text-white;
                 transform: rotate(45deg);
             }
 
@@ -42,8 +46,8 @@
                 left: 0;
                 top: 0;
                 width: 20px;
-                height: 1px;
-                background-color: #FFF;
+                height: 2px;
+                background-color: $text-white;
                 transform: rotate(-45deg);
             }
 
@@ -53,8 +57,8 @@
     }
 
     .content{
-        padding: 20px;
-        background-color: #FFF;
+        padding: 16px 20px 18px 20px;
+        background-color: $text-white;
         .info-card{
             border: 1px solid #EEEEEE;
             border-radius: 8px;
@@ -73,15 +77,15 @@
                 }
                 .text{
                     font-size: 12px;
-                    line-height: 14px;
-                    color: #333333;
+                    line-height: 14.06px;
+                    color: $text-grey;
                 }
             }
 
             .bottom-wrap{
                 display: flex;
                 align-items: center;
-                padding: 4px 8px;
+                padding: 6px 8px;
                 background: linear-gradient(90deg, #E6F9FF 15.42%, #F3FFE0 93.19%);
 
                 .icon-wrap{
@@ -93,7 +97,7 @@
 
                 .text{
                     font-size: 15px;
-                    line-height: 17px;
+                    line-height: 17.58px;
                     font-weight: 700;
                 }
             }
@@ -106,13 +110,13 @@
             .top-wrap{
                 display: flex;
                 justify-content: space-between;
-                padding: 9px 18px;
+                padding: 9px 18px 6px 18px;
                 background: linear-gradient(90deg, #D8EAFF 15.42%, #E9F4FF 93.19%),
                 linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
                 .text{
                     font-size: 12px;
-                    line-height: 14px;
-                    color: #333333;
+                    line-height: 14.06px;
+                    color: $text-grey;
                 }
 
                 .price{
@@ -130,7 +134,7 @@
                     text-align: center;
                     font-size: 15px;
                     line-height: 17px;
-                    color: #333333;
+                    color: $text-grey;
                     font-weight: 700;
                     margin-bottom: 22px;
                 }
@@ -140,14 +144,14 @@
                     .text{
                         font-size: 13px;
                         line-height: 15px;
-                        color: #333333;
+                        color: $text-grey;
                         font-weight: 500;
                         margin-bottom: 4px;
                     }
                     .price{
                         font-size: 26px;
                         line-height: 30px;
-                        color: #333333;
+                        color: $text-grey;
                         font-weight: 700;
                         margin-bottom: 4px;
                     }
@@ -171,7 +175,7 @@
                         flex: 1 1 146px;
                         max-width: 146px;
                         padding: 8px 6px;
-                        border: 1px solid #CDCDCD;
+                        border: 1px solid $text-light-grey;
                         border-radius: 8px;
                         text-align: center;
                         .price{
@@ -184,7 +188,7 @@
                         .text{
                             font-size: 11px;
                             line-height: 12.89px;
-                            color: #333333;
+                            color: $text-grey;
                         }   
                     }
 
@@ -192,7 +196,7 @@
                         position: absolute;
                         left: 50%;
                         top: 18px;
-                        border: 1px dashed #CDCDCD;
+                        border: 1px dashed $text-light-grey;
                         width: 36px;
                         transform: translateX(-50%) rotate(90deg);
 
@@ -224,6 +228,7 @@
                         padding: 7px 13px 7px 13px;
                         border: 1.31px solid #00BF36;
                         border-radius: 5.25px;
+                        background-color: #E7FFF1;
 
                         .price{
                             font-size: 18px;
@@ -247,7 +252,7 @@
                         .text{
                             font-size: 10px;
                             line-height: 11.72px;
-                            color: #333333;
+                            color: $text-grey;
 
                             .highlight{
                                 font-weight: 700;
@@ -267,17 +272,17 @@
                             transform: translateY(-50%) ;
                             z-index: 9;
                             width: 24.75px;
-                            border: 1px dashed #CDCDCD;
+                            border: 1px dashed $text-light-grey;
 
                             &::after{
                                 position: absolute;
                                 content: "";
                                 top:0;
                                 transform: translateY(-50%);
-                                right: -12px;
-                                border-width: 6px 6px 6px 6px;
+                                right: -8px;
+                                border-width: 4px 4px 4px 4px;
                                 border-style: solid ;
-                                border-color: transparent transparent transparent #CDCDCD;
+                                border-color: transparent transparent transparent $text-light-grey;
                             }
                         }
                     }
@@ -287,7 +292,7 @@
                             text-align: end;
                             font-size: 12px;
                             line-height: 14.06px;
-                            color: #333333;
+                            color: $text-grey;
                             font-weight: 500;
                             margin-bottom: 4px;
                         }
@@ -324,17 +329,18 @@
 @media screen and (max-width: 767px){
     .wrapper{
         border-radius: 12px 12px 0 0;
+        box-shadow: none;
         overflow: hidden;
 
         .header{
             text-align: center;
-            color: #333333;
-            background-color: #FFF;
+            color: $text-grey;
+            background-color: $text-white;
             padding: 24px 20px 0 20px;
 
             .text{
                 font-size: 16px;
-                color: #333333;
+                color: $text-grey;
                 line-height: 18.75px;
             }
 
@@ -343,11 +349,13 @@
 
                 
                 &::before{
+                    height: 1px;
                     width: 12px;
                     background-color: #C4C4C4;
                 }
 
                 &::after{
+                    height: 1px;
                     width: 12px;
                     background-color: #C4C4C4;
 
@@ -437,6 +445,7 @@
 
                         .left-wrap{
                             max-width: 100%;
+
                             .price{
                                 text-align: center;
                                 font-size: 16px;
@@ -462,10 +471,6 @@
                                 width: 22px;
                                 transform: rotate(90deg) translateX(11px);
 
-                                &::after{
-                                    right: -8px;
-                                    border-width: 4px 4px 4px 4px;
-                                }
                             }
                         }
 

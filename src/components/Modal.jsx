@@ -1,8 +1,11 @@
-const Modal = ({showModal,onClose}) => {
+const Modal = ({ modalTitle, onClose, children }) => {
   return (
-    <div className="hide">
-      <h2>Modal</h2>
-      <button onClick={onClose}>Close Modal</button>
+    <div className="hide modal wrapper">
+      <div className="header">
+        <div className="text">{modalTitle}</div>
+        <div className="cross-icon" onClick={onClose}></div>
+      </div>
+      {children}
     </div>
   );
 };
