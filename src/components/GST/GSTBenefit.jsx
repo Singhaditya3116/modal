@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImg from "../../images/bg-img.svg";
+import bgImg from "../../icons/bg-img.svg";
 import ArrowIcon1 from '../../icons/ArrowIcon1';
 import ArrowIcon2 from '../../icons/ArrowIcon2';
 import LikeIcon from '../../icons/LikeIcon';
