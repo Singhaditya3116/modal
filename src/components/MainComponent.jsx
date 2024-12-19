@@ -13,7 +13,7 @@ const MainComponent = () => {
     }
                 
             
-    const [showModal, setShowModal] = useState(true);
+    const [showModal, setShowModal] = useState(false);
 
     const toggleModal = () => {
         setShowModal((prevState) => !prevState);
