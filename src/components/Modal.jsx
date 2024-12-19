@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect,useRef } from "react";
 
 
@@ -17,6 +18,7 @@ const Modal = ({ modalTitle, onClose, children }) => {
       modalEle.removeEventListener("click", handleOverlayClick);
     };
     
+
   },[])
 
   return (
